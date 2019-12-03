@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    restart: always
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    ports:
+      - "8080:8080"
+  gerrit:
+    image: gerritcodereview/gerrit
+    restart: always
+    hostname: localhost
+    volumes:
+       - git-volume:/var/gerrit/git
+       - index-volume:/var/gerrit/index
+       - cache-volume:/var/gerrit/cache
+    ports:
+       - "29418:29418"
+       - "80:8080"
+
+volumes:
+  jenkins_home:
+  git-volume:
+  index-volume:
+  cache-volume:
