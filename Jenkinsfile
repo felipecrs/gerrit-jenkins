@@ -5,6 +5,7 @@ pipeline{
             steps{
                 sh 'printenv'
                 sh 'echo felipe'
+                gerritReview message: "Hi"
             }
         }
     }
