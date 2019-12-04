@@ -4,6 +4,7 @@ pipeline{
         stage("printenv"){
             steps{
                 sh 'printenv'
+                sh 'echo felipe'
             }
         }
     }
