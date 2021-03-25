@@ -1,0 +1,6 @@
+{
+    "gerrit.active": true,
+    "gerrit.url": "https://review.gerrithub.io",
+    "gerrit.project": "felipecrs/gerrit-jenkins",
+    "gerrit.showLog": true,
+}
