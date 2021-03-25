@@ -1,0 +1,6 @@
+{
+    "gerrit.active": true,
+    "gerrit.host": "review.gerrithub.io",
+    "gerrit.project": "felipecrs/gerrit-jenkins",
+    "gerrit.showLog": true
+}
