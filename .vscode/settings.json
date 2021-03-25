@@ -1,0 +1,8 @@
+{
+    "gerrit.active": true,
+    "gerrit.host": "review.gerrithub.io",
+    "gerrit.port": 80,
+    "gerrit.project": "felipecrs/gerrit-jenkins",
+    "gerrit.protocol": "https",
+    "gerrit.showLog": true
+}
