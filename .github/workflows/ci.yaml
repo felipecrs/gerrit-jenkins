@@ -1,0 +1,16 @@
+name: ci
+
+on:
+  workflow_dispatch:
+    inputs:
+      event:
+        description: 'The Gerrit event'
+        required: true
+        default: 'patchset-created'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo ${{ github.event.inputs.event }}
